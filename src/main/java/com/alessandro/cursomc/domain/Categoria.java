@@ -2,12 +2,19 @@ package com.alessandro.cursomc.domain;
 
 import java.io.Serializable;
 
+import javax.annotation.Generated;
+import javax.persistence.Entity;
+import javax.persistence.GenerationType;
+@Entity
 public class Categoria implements Serializable {
 	
 	
 	private static final long serialVersionUID = 1L;
 	
 	
+	
+	@Id
+	@Generatedvalue(strategy=GenerationType.IDENTITY)
 	private Integer id;
 	private String nome;
 	
